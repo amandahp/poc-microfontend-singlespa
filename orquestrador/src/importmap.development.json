@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@ah/root-config": "http://localhost:9000/ah-root-config.js",
+    "@ah/header": "http://localhost:8500/ah-header.js",
+    "@ah/login": "http://localhost:8501/ah-login.js",
+    "@ah/home": "http://localhost:8502/ah-home.js",
+    "@ah/dashboard": "http://localhost:8503/ah-dashboard.js"
+  }
+}
