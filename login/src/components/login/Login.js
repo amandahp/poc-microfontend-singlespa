@@ -92,11 +92,13 @@ const Login = () => {
                 borderColor: 'color.secondary',
               },
             }}
+            id="standard-password-input"
+            type="password"
+            autoComplete="current-password"
             label="Senha"
             variant="outlined"
             placeholder="********"
             onChange={onChangeSenha}
-            multiline
           />
           <Link>
             <Typography

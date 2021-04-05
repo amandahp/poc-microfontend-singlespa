@@ -56,7 +56,7 @@ const MainNavbar = (props) => {
         sx={{
           backgroundColor: grey[300], 
           position:'absolute', 
-          left: '1150px',  
+          left: '1140px',  
           top: '10px',
           '&:hover':{
             color:'color.tertiary', 
@@ -66,9 +66,12 @@ const MainNavbar = (props) => {
           }}>
           <PersonIcon />
         </Avatar>
-        <Select sx={{color: 'text.secondary', position:'absolute', left:'1210px',  top: '10px'}}>
-          <option value={user} style={{background:"#F4F6F8", padding:10}}>
+        <Select sx={{color: 'text.secondary', position:'absolute', left:'1190px',  top: '13px'}} value={user}>
+          <option value={user} style={{background:"#F4F6F8", padding:10, color:'text.secondary'}} selected>
             {user}
+          </option>
+          <option value='sair' style={{background:"#F4F6F8", padding:10, color:'text.secondary'}}>
+            Sair
           </option>
         </Select>
       </Box>

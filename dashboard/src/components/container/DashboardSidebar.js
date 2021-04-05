@@ -53,7 +53,10 @@ const DashboardSidebar = () => {
         display: 'flex',
         flexDirection: 'column',
         height: '100%',
-        width: '250px'
+        width: '250px',
+        overflow: 'hidden',
+        overflowX: 'hidden',
+        overflowY: 'hidden'
       }}
       >
       <Box sx={{ p: 2 }}>
@@ -83,7 +86,10 @@ const DashboardSidebar = () => {
               width: 220,
               top: 64,
               height: 'calc(100% - 94px)',
-              border:'none'
+              border:'none',
+              overflow: 'hidden',
+              overflowX: 'hidden',
+              overflowY: 'hidden'
             }
           }}
         >

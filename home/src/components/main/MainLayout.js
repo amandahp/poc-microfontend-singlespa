@@ -29,7 +29,7 @@ const Main = () => {
         display: 'flex',
         position: 'relative',
         flexDirection: 'column',
-        height: '100%',
+        height: '100vh',
         widht:'100vw',
         justifyContent: 'center'
         }}
@@ -42,7 +42,7 @@ const Main = () => {
             widht:'100vw',
             justifyContent: 'center',
             marginTop: '100px',
-            height: '300px'
+            height: '100vh',
           }}
         >
           <Typography variant="h2"
@@ -50,6 +50,7 @@ const Main = () => {
               textAlign:'center',
               color: '#717171',
               fontWeight: 'bold',
+              marginTop: '90px'
             }}
           >
             Quero usar o Pagar.me
@@ -59,6 +60,7 @@ const Main = () => {
             sx={{
               color: '#7B7B7B',
               textAlign:'center',
+              marginTop: '-120px'
             }}
           >
             Entraremos em contato o mais rápido possível
@@ -68,7 +70,7 @@ const Main = () => {
               display:'flex',
               flexDirection:'row',
               justifyContent: 'center',
-              marginTop: '30px'
+              marginTop: '-500px'
             }}
           >
             {forms.map((formText, index)=> {
@@ -81,7 +83,7 @@ const Main = () => {
               )
             })}
             </FormGroup> 
-            <Box>
+            <Box sx={{marginTop:'-300px'}}>
               <TextField
                 sx={{
                   height: '40px',
