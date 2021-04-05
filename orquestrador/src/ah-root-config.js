@@ -1,7 +1,8 @@
 
 import { registerApplication, start } from "single-spa";
+import locationDefinition from './activity'
 
-fetch('https://run.mocky.io/v3/bbb18598-24aa-486c-b561-7029e1843164')
+fetch('https://run.mocky.io/v3/ad4ff541-8145-4dd7-8970-365a7c496af7')
   .then(resp => resp.json())
   .then(data => {
     console.log(data)
@@ -10,7 +11,7 @@ fetch('https://run.mocky.io/v3/bbb18598-24aa-486c-b561-7029e1843164')
         name: app.name,
         app: () => System.import(app.package),
         activeWhen: app.exact
-          ? (location) => location.pathname === app.activeWhen
+          ? (location) => locationDefinition(location, app.activeWhen)
           : [app.activeWhen]
       });
     })

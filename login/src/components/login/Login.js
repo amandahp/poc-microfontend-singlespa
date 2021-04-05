@@ -26,12 +26,12 @@ const Login = () => {
   const submitForm = async (event) => {
     event.preventDefault()
     if (email && password) {
-      const result = await axios.post("https://run.mocky.io/v3/001a846b-e5df-4fb7-8054-38fe9cd9645e", { email, password })
+      const result = await axios.post("https://run.mocky.io/v3/cef5127a-fbfe-4d6b-89cc-6296fd666fcb", { email, password })
       console.log(result)
       if (result.status === 200) {
         const { data: { userName } } = result
         localStorage.setItem('userName', userName)
-        window.location = "https://pagar.me/"
+        window.location = "/dashboard"
       }
     }
   }
@@ -58,6 +58,7 @@ const Login = () => {
             flexDirection: 'column',
             widht: '100vw',
             justifyContent: 'center',
+            marginTop: '115px'
           }}
         >
           <Typography

@@ -12,6 +12,10 @@ import {
 const MainNavbar = (props) => {
   const buttons = ["Sobre","Soluções","Developers","Suporte"]
 
+  const goToLoginPage = () => {
+    window.location = '/login'
+  }
+
   return(
     <AppBar
     elevation={0}
@@ -61,7 +65,9 @@ const MainNavbar = (props) => {
                 Quero Usar
             </p>
           </Button>
-          <Button sx={{
+          <Button 
+            onClick={() => goToLoginPage()}
+            sx={{
             width:'120px',
             color:'color.secondary', 
             border: '2px solid',

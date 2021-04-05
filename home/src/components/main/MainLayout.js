@@ -41,7 +41,8 @@ const Main = () => {
             flexDirection: 'column',
             widht:'100vw',
             justifyContent: 'center',
-            marginTop: '-100px'
+            marginTop: '100px',
+            height: '300px'
           }}
         >
           <Typography variant="h2"
